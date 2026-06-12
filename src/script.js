@@ -14,6 +14,7 @@ document.querySelector("p").innerText =
 function showWord(level){
 
 score=0
+
 updateScore()
 
 currentIndex = 0
