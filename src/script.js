@@ -21,10 +21,35 @@ document.getElementById(
 "message"
 ).innerText = ""
 
+let levelName=
+
+level==="B1"
+
+?
+
+"Kezdő"
+
+:
+
+level==="B2"
+
+?
+
+"Középhaladó"
+
+:
+
+"Haladó"
+
 document.getElementById(
 "level"
-).innerText =
-"Szint: " + level
+)
+
+.innerText=
+
+"Szint: "+
+
+levelName
 
 document.getElementById(
 "remaining"
