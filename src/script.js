@@ -7,4 +7,13 @@ document.querySelector("p").innerText=
 
 }
 
+function showWord(level){
+
+document.getElementById("word")
+.innerText=
+
+words[level][0].hun
+
+}
+
 updateScore()
