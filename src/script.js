@@ -13,6 +13,9 @@ document.querySelector("p").innerText =
 
 function showWord(level){
 
+score=0
+updateScore()
+
 currentIndex = 0
 
 currentLevel = level
@@ -69,7 +72,7 @@ document.getElementById(
 
 .innerText=
 
-words[level][currentIndex].hun
+words[level][0].hun
 
 document.getElementById(
 "answer"
@@ -87,133 +90,7 @@ document.getElementById(
 
 }
 
-function finishGame(text,word){
-
-document.getElementById(
-"word"
-)
-
-.innerText=
-
-word
-
-document.getElementById(
-"message"
-)
-
-.innerText=
-
-text
-
-document.getElementById(
-"restart"
-)
-
-.style.display=
-
-"inline-block"
-
-}
-
-function checkAnswer(){
-
-let answer=
-
-document.getElementById(
-"answer"
-)
-
-.value
-
-.toLowerCase()
-
-if(
-
-answer===
-
-words[currentLevel]
-[currentIndex]
-.eng
-.toLowerCase()
-
-){
-
-score++
-
-updateScore()
-
-}
-
-currentIndex++
-
-document.getElementById(
-"answer"
-)
-
-.value=""
-
-document.getElementById(
-"remaining"
-)
-
-.innerText=
-
-"Hátralévő szavak: "+
-
-(
-
-words[currentLevel]
-.length
-
-*
-
-currentIndex
-
-)
-
-if(
-
-currentIndex<
-
-words[currentLevel]
-.length
-
-){
-
-document.getElementById(
-"word"
-)
-
-.innerText=
-
-words[currentLevel]
-[currentIndex]
-.hun
-
-document.getElementById(
-"message"
-)
-
-.innerText=
-
-answer===
-
-words[currentLevel]
-[currentIndex-1]
-.eng
-.toLowerCase()
-
-?
-
-"Helyes válasz!"
-
-:
-
-"Nem jó válasz"
-
-}
-
-else{
+function finishGame(){
 
 let percent=
 
@@ -271,13 +148,142 @@ text+=
 
 }
 
-finishGame(
+document.getElementById(
+"word"
+)
 
-text,
+.innerText=
 
-"Gratulálok, vége!"
+"Vége!"
+
+document.getElementById(
+"message"
+)
+
+.innerText=
+
+text
+
+document.getElementById(
+"restart"
+)
+
+.style.display=
+
+"inline-block"
+
+}
+
+function checkAnswer(){
+
+if(
+currentIndex>=
+words[currentLevel]
+.length
+){
+
+return
+
+}
+
+let answer=
+
+document.getElementById(
+"answer"
+)
+
+.value
+
+.toLowerCase()
+
+if(
+
+answer===
+
+words[currentLevel]
+[currentIndex]
+.eng
+.toLowerCase()
+
+){
+
+score++
+
+document.getElementById(
+"message"
+)
+
+.innerText=
+
+"Helyes válasz!"
+
+}
+
+else{
+
+document.getElementById(
+"message"
+)
+
+.innerText=
+
+"Nem jó válasz"
+
+}
+
+updateScore()
+
+currentIndex++
+
+document.getElementById(
+"answer"
+)
+
+.value=""
+
+document.getElementById(
+"remaining"
+)
+
+.innerText=
+
+"Hátralévő szavak: "+
+
+(
+
+words[currentLevel]
+.length
+
+*
+
+currentIndex
 
 )
+
+if(
+
+currentIndex<
+
+words[currentLevel]
+.length
+
+){
+
+document.getElementById(
+"word"
+)
+
+.innerText=
+
+words[currentLevel]
+[currentIndex]
+.hun
+
+}
+
+else{
+
+finishGame()
 
 }
 
