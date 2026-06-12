@@ -208,25 +208,38 @@ document.getElementById(
 
 "Vege!"
 
+let percent=
+
+Math.round(
+
+score
+
+/
+
+words[currentLevel]
+.length
+
+*100
+
+)
+
 document.getElementById(
 "message"
 )
 
 .innerText=
 
-"Pontszam: "+
+"Pontszám: "+
 
 score+
 
 "/"+
 
 words[currentLevel]
-.length
+.length+
 
-}
+" ("+
 
-}
+percent+
 
-}
-
-updateScore()
+"%)"
