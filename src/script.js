@@ -61,7 +61,13 @@ score++
 
 updateScore()
 
-alert("Helyes valasz!")
+document.getElementById(
+"message"
+)
+
+.innerText=
+
+"Helyes valasz!"
 
 currentIndex++
 
@@ -80,7 +86,13 @@ currentLevel
   
 else{
 
-alert("Nem jo valasz")
+document.getElementById(
+"message"
+)
+
+.innerText=
+
+"Nem jo valasz"
 
 }
 
