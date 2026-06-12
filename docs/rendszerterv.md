@@ -16,7 +16,10 @@ Funkciók:
 - pontszám számítása
 
 Fájlok:
-- index.html
-- style.css
-- script.js
-- words.js
+- words.js tartalmazza a szólistákat.
+- script.js kezeli a játék logikáját.
+- style.css felel a megjelenésért.
+- index.html az oldal szerkezetét biztosítja.
+
+A rendszer kliensoldalon fut.
+Internetkapcsolat nélkül is használható.
