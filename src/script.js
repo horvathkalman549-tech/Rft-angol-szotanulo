@@ -184,11 +184,7 @@ words[currentLevel]
 
 )
 
-document.getElementById(
-"message"
-)
-
-.innerText=
+let text=
 
 "Pontszám: "+
 
@@ -204,6 +200,38 @@ words[currentLevel]
 percent+
 
 "%)"
+
+if(percent>=80){
+
+text+=
+
+" - Nagyon ügyes! 🎉"
+
+}
+
+else if(percent>=60){
+
+text+=
+
+" - Szép munka! 😊"
+
+}
+
+else{
+
+text+=
+
+" - Gyakorolj még egy kicsit 🙂"
+
+}
+
+document.getElementById(
+"message"
+)
+
+.innerText=
+
+text
 
 }
 
@@ -292,11 +320,7 @@ words[currentLevel]
 
 )
 
-document.getElementById(
-"message"
-)
-
-.innerText=
+let text=
 
 "Pontszám: "+
 
@@ -312,6 +336,38 @@ words[currentLevel]
 percent+
 
 "%)"
+
+if(percent>=80){
+
+text+=
+
+" - Nagyon ügyes! 🎉"
+
+}
+
+else if(percent>=60){
+
+text+=
+
+" - Szép munka! 😊"
+
+}
+
+else{
+
+text+=
+
+" - Gyakorolj még egy kicsit 🙂"
+
+}
+
+document.getElementById(
+"message"
+)
+
+.innerText=
+
+text
 
 }
 
