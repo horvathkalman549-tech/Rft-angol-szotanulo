@@ -18,6 +18,12 @@ currentIndex=0
 currentLevel=level
 
 document.getElementById(
+"message"
+)
+
+.innerText=""
+
+document.getElementById(
 "level"
 )
 
