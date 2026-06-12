@@ -62,6 +62,7 @@ answer===
 words[currentLevel]
 [currentIndex]
 .eng
+.toLowerCase()
 
 ){
 
