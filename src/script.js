@@ -17,6 +17,14 @@ currentIndex = 0
 
 currentLevel = level
 
+words[level].sort(
+
+()=>
+
+Math.random()-0.5
+
+)
+
 document.getElementById(
 "message"
 ).innerText = ""
