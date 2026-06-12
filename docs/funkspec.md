@@ -3,26 +3,34 @@
 A rendszer funkciói:
 
 1. Szint kiválasztása
-- Kezdő
-- Középhaladó
-- Haladó
+- A felhasználó kezdő, középhaladó vagy haladó szint közül választhat.
 
 2. Kérdések megjelenítése
+- A rendszer magyar szavakat jelenít meg fordításra.
 
 3. Válasz ellenőrzése
+- A rendszer összehasonlítja a felhasználó válaszát a helyes megoldással.
 
 4. Pontszám számítása
+- Helyes válasz esetén a pontszám növekszik.
 
-5. Eredmény megjelenítése
+6. Eredmény megjelenítése
+- A játék végén megjelenik az elért eredmény.
 
-6. Hátralévő szavak megjelenítése
+7. Hátralévő szavak megjelenítése
+- A rendszer kijelzi a még megoldandó szavak számát.
 
-7. Enter billentyű támogatása
+8. Enter billentyű támogatása
+- Az Enter lenyomásával ellenőrizhető a válasz vagy kihagyható a válasz.
 
-8. Új játék indítása
+9. Új játék indítása
+- A játék alapállapotba visszaállítható.
 
-9. Szavak véletlenszerű sorrendben jelennek meg
+10. Szavak véletlenszerű sorrendben jelennek meg
+- A rendszer minden indításkor összekeveri a szólistát.
 
-10. Pontszázalék számítása
+11. Pontszázalék számítása
+- A rendszer százalékosan is kiértékeli a teljesítményt.
 
-11. Játék újraindítása
+12. Játék újraindítása
+- A felhasználó újra kezdheti a gyakorlást.
