@@ -6,11 +6,22 @@ Arial,
 sans-serif;
 
 background:
+
 linear-gradient(
-180deg,
-#eef2ff,
-#f8f9ff
-);
+
+rgba(240,244,255,.88),
+
+rgba(240,244,255,.88)
+
+),
+
+url("background.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+background-attachment:fixed;
 
 text-align:center;
 
