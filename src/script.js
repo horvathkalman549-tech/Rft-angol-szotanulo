@@ -13,6 +13,8 @@ document.querySelector("p").innerText=
 
 function showWord(level){
 
+currentIndex=0
+
 currentLevel=level
 
 document.getElementById(
