@@ -104,18 +104,7 @@ words[currentLevel]
 currentIndex
 )
 
-if(
-currentIndex<
-words[currentLevel].length
-){
-
-showWord(
-currentLevel
-)
-
-}
-
-}
+let score = 0
   
 else{
 
