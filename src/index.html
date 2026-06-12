@@ -30,7 +30,13 @@ Szint: nincs kivalasztva
 Válassz szintet
 </p>
 
-<input id="answer" type="text">
+<input
+id="answer"
+type="text"
+
+onkeydown="if(event.key==='Enter')
+checkAnswer()"
+>
 
 <p id="message"></p>
 
