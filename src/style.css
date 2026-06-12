@@ -71,8 +71,6 @@ width:320px;
 
 padding:16px;
 
-border-radius:14px;
-
 font-size:18px;
 
 border-radius:16px;
@@ -134,5 +132,48 @@ min-width:
 p{
 
 font-size:24px;
+
+}
+
+#word{
+
+max-width:420px;
+
+margin-left:auto;
+
+margin-right:auto;
+
+}
+
+input{
+
+background:
+
+rgba(
+255,
+255,
+255,
+0.72
+);
+
+border:
+
+2px solid
+
+rgba(
+255,
+255,
+255,
+0.15
+);
+
+color:#222;
+
+}
+
+#level,
+#remaining{
+
+opacity:0.95;
 
 }
