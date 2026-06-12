@@ -169,6 +169,42 @@ document.getElementById(
 
 "Gratulálok, vége!"
 
+let percent=
+
+Math.round(
+
+score
+
+/
+
+words[currentLevel]
+.length
+
+*100
+
+)
+
+document.getElementById(
+"message"
+)
+
+.innerText=
+
+"Pontszám: "+
+
+score+
+
+"/"+
+
+words[currentLevel]
+.length+
+
+" ("+
+
+percent+
+
+"%)"
+
 }
 
 }
