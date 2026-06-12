@@ -31,3 +31,9 @@ A felhasználó:
 ## Projekt állapot
 
 Fejlesztés alatt
+
+## Keszitette
+
+Nev: Horváth Kálmán, YCVXV0
+RFT projekt
+2026
