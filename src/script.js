@@ -251,7 +251,7 @@ document.getElementById(
 words[currentLevel]
 .length
 
-*
+-
 
 currentIndex
 
@@ -343,3 +343,5 @@ document.getElementById(
 "none"
 
 }
+
+updateScore()
