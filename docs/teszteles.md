@@ -64,3 +64,27 @@ Elso szo jelenik meg
 
 Eredmeny:
 Sikeres
+
+
+## Teszt 7
+
+Lepes:
+Uj jatek gomb megnyomasa
+
+Elvart:
+Visszaall az alapallapot
+
+Eredmeny:
+Sikeres
+
+
+Teszt 8
+
+Lepes:
+Jatek befejezese
+
+Elvart:
+Pontszam es szazalek megjelenik
+
+Eredmeny:
+Sikeres
