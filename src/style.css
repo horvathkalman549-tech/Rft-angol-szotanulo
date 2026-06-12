@@ -9,13 +9,13 @@ background:
 
 linear-gradient(
 
-rgba(240,244,255,.88),
+rgba(240,244,255,.72),
 
-rgba(240,244,255,.88)
+rgba(240,244,255,.72)
 
 ),
 
-url("background.jpg");
+url("háttérkép.png");
 
 background-size:cover;
 
@@ -65,6 +65,8 @@ border-radius:14px;
 font-size:18px;
 
 margin:8px;
+
+cursor:pointer;
 
 }
 
@@ -124,5 +126,11 @@ inline-block;
 min-width:
 
 250px;
+
+}
+
+p{
+
+font-size:24px;
 
 }
