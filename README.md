@@ -32,7 +32,7 @@ A felhasználó:
 
 Fejlesztés alatt
 
-## Keszitette
+## Keszítette
 
 Nev: Horváth Kálmán, YCVXV0
 RFT projekt
