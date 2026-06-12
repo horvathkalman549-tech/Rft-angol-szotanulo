@@ -8,30 +8,8 @@ sans-serif;
 background:
 linear-gradient(
 180deg,
-#dbeafe,
-#f5f3ff,
-#ffffff
-
-background:
-linear-gradient(
-135deg,
-#dbeafe,
-#ffffff
-);
-
-background-image:
-
-radial-gradient(
-circle at 20% 20%,
-rgba(91,124,255,.15),
-transparent 20%
-),
-
-radial-gradient(
-circle at 80% 70%,
-rgba(100,200,255,.15),
-transparent 20%
-
+#eef2ff,
+#f8f9ff
 );
 
 text-align:center;
@@ -66,6 +44,8 @@ font-size:18px;
 
 margin:8px;
 
+cursor:pointer;
+
 }
 
 button:hover{
@@ -99,5 +79,11 @@ margin-top:25px;
 p{
 
 font-size:24px;
+
+}
+
+#message{
+
+font-weight:bold;
 
 }
