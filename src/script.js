@@ -18,11 +18,7 @@ currentIndex = 0
 currentLevel = level
 
 words[level].sort(
-
-()=>
-
-Math.random()-0.5
-
+()=>Math.random()-0.5
 )
 
 document.getElementById(
@@ -55,30 +51,73 @@ document.getElementById(
 
 .innerText=
 
-"Szint: "+
-
-levelName
+"Szint: "+levelName
 
 document.getElementById(
 "remaining"
-).innerText =
-"Hátralévő szavak: " +
+)
+
+.innerText=
+
+"Hátralévő szavak: "+
+
 words[level].length
 
 document.getElementById(
 "word"
-).innerText =
+)
+
+.innerText=
+
 words[level][currentIndex].hun
 
 document.getElementById(
 "answer"
-).value=""
+)
+
+.value=""
+
+document.getElementById(
+"restart"
+)
+
+.style.display=
+
+"none"
+
+}
+
+function finishGame(text,word){
+
+document.getElementById(
+"word"
+)
+
+.innerText=
+
+word
+
+document.getElementById(
+"message"
+)
+
+.innerText=
+
+text
+
+document.getElementById(
+"restart"
+)
+
+.style.display=
+
+"inline-block"
 
 }
 
 function checkAnswer(){
 
-let answer =
+let answer=
 
 document.getElementById(
 "answer"
@@ -103,207 +142,78 @@ score++
 
 updateScore()
 
+}
+
+currentIndex++
+
+document.getElementById(
+"answer"
+)
+
+.value=""
+
+document.getElementById(
+"remaining"
+)
+
+.innerText=
+
+"Hátralévő szavak: "+
+
+(
+
+words[currentLevel]
+.length
+
+*
+
+currentIndex
+
+)
+
+if(
+
+currentIndex<
+
+words[currentLevel]
+.length
+
+){
+
+document.getElementById(
+"word"
+)
+
+.innerText=
+
+words[currentLevel]
+[currentIndex]
+.hun
+
 document.getElementById(
 "message"
 )
 
-.innerText =
+.innerText=
+
+answer===
+
+words[currentLevel]
+[currentIndex-1]
+.eng
+.toLowerCase()
+
+?
 
 "Helyes válasz!"
 
-currentIndex++
-
-document.getElementById(
-"remaining"
-)
-
-.innerText =
-
-"Hátralévő szavak: "+
-
-(
-
-words[currentLevel]
-.length
-
--
-
-currentIndex
-
-)
-
-document.getElementById(
-"answer"
-)
-
-.value=""
-
-if(
-
-currentIndex<
-
-words[currentLevel]
-.length
-
-){
-
-document.getElementById(
-"word"
-)
-
-.innerText=
-
-words[currentLevel]
-[currentIndex]
-.hun
-
-}
-
-else{
-
-document.getElementById(
-"word"
-)
-
-.innerText=
-
-"Gratulálok, vége!"
-
-let percent=
-
-Math.round(
-
-score
-
-/
-
-words[currentLevel]
-.length
-
-*100
-
-)
-
-let text=
-
-"Pontszám: "+
-
-score+
-
-"/"+
-
-words[currentLevel]
-.length+
-
-" ("+
-
-percent+
-
-"%)"
-
-if(percent>=80){
-
-text+=
-
-" - Nagyon ügyes! 🎉"
-
-}
-
-else if(percent>=60){
-
-text+=
-
-" - Szép munka! 😊"
-
-}
-
-else{
-
-text+=
-
-" - Gyakorolj még egy kicsit 🙂"
-
-}
-
-document.getElementById(
-"message"
-)
-
-.innerText=
-
-text
-
-}
-
-}
-
-else{
-
-document.getElementById(
-"message"
-)
-
-.innerText=
+:
 
 "Nem jó válasz"
 
-currentIndex++
-
-document.getElementById(
-"answer"
-)
-
-.value=""
-
-document.getElementById(
-"remaining"
-)
-
-.innerText=
-
-"Hátralévő szavak: "+
-
-(
-
-words[currentLevel]
-.length
-
--
-
-currentIndex
-
-)
-
-if(
-
-currentIndex<
-
-words[currentLevel]
-.length
-
-){
-
-document.getElementById(
-"word"
-)
-
-.innerText=
-
-words[currentLevel]
-[currentIndex]
-.hun
-
 }
 
 else{
-
-document.getElementById(
-"word"
-)
-
-.innerText=
-
-"Vége!"
 
 let percent=
 
@@ -361,18 +271,72 @@ text+=
 
 }
 
-document.getElementById(
-"message"
+finishGame(
+
+text,
+
+"Gratulálok, vége!"
+
 )
-
-.innerText=
-
-text
-
-}
 
 }
 
 }
 
 updateScore()
+
+function restartGame(){
+
+score=0
+
+currentIndex=0
+
+currentLevel="B1"
+
+updateScore()
+
+document.getElementById(
+"level"
+)
+
+.innerText=
+
+"Szint: nincs kiválasztva"
+
+document.getElementById(
+"remaining"
+)
+
+.innerText=
+
+"Hátralévő szavak: 0"
+
+document.getElementById(
+"word"
+)
+
+.innerText=
+
+"Válassz szintet"
+
+document.getElementById(
+"message"
+)
+
+.innerText=""
+
+document.getElementById(
+"answer"
+)
+
+.value=""
+
+document.getElementById(
+"restart"
+)
+
+.style.display=
+
+"none"
+
+}
