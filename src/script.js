@@ -1,5 +1,7 @@
 let score = 0
 
+let currentIndex=0
+
 let currentLevel="B1"
 
 function updateScore(){
@@ -19,7 +21,7 @@ document.getElementById(
 
 .innerText=
 
-words[level][0].hun
+words[level][currentIndex].hun
 
 }
 
@@ -38,7 +40,7 @@ document.getElementById(
 if(
 answer===
 
-words[currentLevel][0].eng
+words[currentLevel][currentIndex].eng
 ){
 
 score++
@@ -46,6 +48,19 @@ score++
 updateScore()
 
 alert("Helyes valasz!")
+
+currentIndex++
+
+if(
+currentIndex<
+words[currentLevel].length
+){
+
+showWord(
+currentLevel
+)
+
+}
 
 }
   
