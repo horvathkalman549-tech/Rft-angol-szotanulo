@@ -1,61 +1,81 @@
 body{
 
-font-family:Arial;
+font-family:
+"Segoe UI",
+Arial,
+sans-serif;
 
-background:#f4f6fb;
+background:
+linear-gradient(
+180deg,
+#eef2ff,
+#f8f9ff
+);
+
+text-align:center;
 
 padding:40px;
 
-text-align:center;
+color:#222;
 
 }
 
 h1{
 
-font-size:40px;
+font-size:56px;
+
+margin-bottom:40px;
 
 }
 
 button{
 
-padding:12px 20px;
+background:#5b7cff;
 
-margin:8px;
+color:white;
 
 border:none;
 
-border-radius:12px;
+padding:14px 24px;
 
-cursor:pointer;
+border-radius:14px;
+
+font-size:18px;
+
+margin:8px;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
 
 }
 
 input{
 
-padding:12px;
+width:320px;
 
-width:260px;
+padding:16px;
 
-border-radius:10px;
+border-radius:14px;
+
+font-size:18px;
 
 }
 
 #word{
 
-font-size:28px;
+font-size:36px;
 
-font-weight:bold;
+font-weight:700;
 
-margin:20px;
+margin-top:25px;
 
 }
 
-#message{
+p{
 
-font-size:20px;
-
-font-weight:bold;
-
-margin-top:15px;
+font-size:24px;
 
 }
