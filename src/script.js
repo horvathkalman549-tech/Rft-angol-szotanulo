@@ -18,6 +18,14 @@ currentIndex=0
 currentLevel=level
 
 document.getElementById(
+"level"
+)
+
+.innerText=
+
+"Szint: "+level
+
+document.getElementById(
 "word"
 )
 
