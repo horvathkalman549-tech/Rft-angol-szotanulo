@@ -78,7 +78,7 @@ Eredmeny:
 Sikeres
 
 
-Teszt 8
+## Teszt 8
 
 Lepes:
 Jatek befejezese
@@ -88,3 +88,21 @@ Pontszam es szazalek megjelenik
 
 Eredmeny:
 Sikeres
+
+
+## Teszt 9
+
+Lepes: Osszes szo megvalaszolasa
+
+Elvart: Megjelenik az uj jatek gomb
+
+Eredmeny: Sikeres
+
+
+## Teszt 10
+
+Lepes: Ures valasz elkuldese
+
+Elvart: A rendszer hibaskent kezeli es tovabblep
+
+Eredmeny: Sikeres
