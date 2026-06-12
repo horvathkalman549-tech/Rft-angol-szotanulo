@@ -1,3 +1,5 @@
+alert("script mukodik")
+
 let score = 0
 
 let currentIndex=0
