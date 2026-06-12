@@ -17,3 +17,27 @@ words[level][0].hun
 }
 
 updateScore()
+
+let answer=
+
+document.getElementById(
+"answer"
+)
+
+.value
+
+.toLowerCase()
+
+if(
+answer===
+
+words["B1"][0].eng
+){
+
+score++
+
+updateScore()
+
+}
+
+}
