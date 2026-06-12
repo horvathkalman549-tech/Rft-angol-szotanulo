@@ -46,9 +46,10 @@ Válassz szintet
 id="answer"
 type="text"
 
-onkeydown="if(event.key==='Enter')
-checkAnswer()"
+onkeydown="if(event.key==='Enter'){event.preventDefault();checkAnswer()}"
+
 >
+
 
 <p id="message"></p>
 
