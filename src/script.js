@@ -29,6 +29,10 @@ words[level][currentIndex].hun
 
 updateScore()
 
+document.getElementById(
+"answer"
+).value=""
+
 let answer=
 
 document.getElementById(
