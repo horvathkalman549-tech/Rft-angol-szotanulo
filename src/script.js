@@ -1,5 +1,7 @@
 let score = 0
 
+let currentLevel="B1"
+
 function updateScore(){
 
 document.querySelector("p").innerText=
@@ -9,7 +11,12 @@ document.querySelector("p").innerText=
 
 function showWord(level){
 
-document.getElementById("word")
+currentLevel=level
+
+document.getElementById(
+"word"
+)
+
 .innerText=
 
 words[level][0].hun
@@ -31,7 +38,7 @@ document.getElementById(
 if(
 answer===
 
-words["B1"][0].eng
+words[currentLevel][0].eng
 ){
 
 score++
