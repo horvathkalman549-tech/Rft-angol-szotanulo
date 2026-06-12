@@ -9,9 +9,9 @@ background:
 
 linear-gradient(
 
-rgba(20,30,60,.15),
+rgba(20,30,60,.20),
 
-rgba(20,30,60,.15)
+rgba(20,30,60,.20)
 
 ),
 
@@ -23,28 +23,11 @@ background-position:center;
 
 background-attachment:fixed;
 
-background-size:cover;
-
-background-position:center;
-
-background-attachment:fixed;
-
 text-align:center;
 
 padding:40px;
 
-color:#222;
-
-text-shadow:
-
-0 2px 16px
-
-rgba(
-255,
-255,
-255,
-0.95
-);
+color:#f5f7ff;
 
 }
 
@@ -92,6 +75,17 @@ border-radius:14px;
 
 font-size:18px;
 
+border-radius:16px;
+
+background:
+
+rgba(
+255,
+255,
+255,
+0.88
+);
+
 }
 
 #word{
@@ -105,16 +99,18 @@ margin-top:25px;
 background:
 
 rgba(
-255,
-255,
-255,
-0.35
+20,
+25,
+45,
+0.55
 );
+
+color:white;
 
 backdrop-filter:
 
 blur(
-8px
+10px
 );
 
 padding:
