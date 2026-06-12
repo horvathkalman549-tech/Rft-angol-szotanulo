@@ -11,6 +11,27 @@ linear-gradient(
 #dbeafe,
 #f5f3ff,
 #ffffff
+
+background:
+linear-gradient(
+135deg,
+#dbeafe,
+#ffffff
+);
+
+background-image:
+
+radial-gradient(
+circle at 20% 20%,
+rgba(91,124,255,.15),
+transparent 20%
+),
+
+radial-gradient(
+circle at 80% 70%,
+rgba(100,200,255,.15),
+transparent 20%
+
 );
 
 text-align:center;
