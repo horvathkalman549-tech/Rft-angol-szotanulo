@@ -2,38 +2,46 @@
 
 ## Projekt célja
 
-Egy webes angol szótanuló alkalmazás létrehozása.
+Egy webes angol szótanuló webalkalmazás létrehozása, amely segíti a felhasználót az angol szókincs gyakorlásában különböző nehézségi szinteken.
+
+## Felhasználói lehetőségek
 
 A felhasználó:
-- B1 szintet választhat
-- B2 szintet választhat
-- C1 szintet választhat
-- szavakat gyakorolhat
-- pontokat gyűjthet
+
+* kezdő (B1) szintet választhat
+* középhaladó (B2) szintet választhat
+* haladó (C1) szintet választhat
+* angol szavakat gyakorolhat
+* válaszokat adhat meg Enter billentyűvel vagy gombnyomással
+* pontokat gyűjthet
+* megtekintheti a hátralévő szavak számát
+* új játékot indíthat
 
 ## Használt technológiák
 
-- HTML
-- CSS
-- JavaScript
-- Git
-- GitHub
+* HTML
+* CSS
+* JavaScript
+* Git
+* GitHub
 
 ## Funkciók
 
-- szintválasztás
-- szó megjelenítés
-- válasz ellenőrzés
-- pontszám számítás
-- hátralévő szavak kijelzése
-- visszajelzés
+* szintválasztás
+* szavak véletlenszerű megjelenítése
+* válasz ellenőrzése
+* pontszám számítása
+* százalékos eredmény megjelenítése
+* hátralévő szavak kijelzése
+* visszajelzés helyes és hibás válasz esetén
+* új játék indítása
 
-## Projekt állapot
+## Projekt állapota
 
-Fejlesztés alatt
+Kész / végleges verzió
 
-## Keszítette
+## Készítette
 
-Nev: Horváth Kálmán, YCVXV0
-RFT projekt
+Horváth Kálmán – YCVXV0
+Rendszerfejlesztés technológiája projekt
 2026
