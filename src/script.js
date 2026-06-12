@@ -243,3 +243,11 @@ words[currentLevel]
 percent+
 
 "%)"
+
+}
+
+}
+
+}
+
+updateScore()
