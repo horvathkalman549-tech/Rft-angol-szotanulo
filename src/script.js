@@ -45,6 +45,14 @@ score++
 
 updateScore()
 
+alert("Helyes valasz!")
+
+}
+  
+else{
+
+alert("Nem jo valasz")
+
 }
 
 }
