@@ -9,13 +9,19 @@ background:
 
 linear-gradient(
 
-rgba(180,195,230,.35)
+rgba(20,30,60,.15),
 
-rgba(180,195,230,.35)
+rgba(20,30,60,.15)
 
 ),
 
 url("háttérkép.png");
+
+background-size:cover;
+
+background-position:center;
+
+background-attachment:fixed;
 
 background-size:cover;
 
@@ -31,13 +37,13 @@ color:#222;
 
 text-shadow:
 
-0 2px 10px
+0 2px 16px
 
 rgba(
 255,
 255,
 255,
-0.75
+0.95
 );
 
 }
