@@ -1,65 +1,51 @@
-alert("script mukodik")
-
 let score = 0
 
-let currentIndex=0
+let currentIndex = 0
 
-let currentLevel="B1"
+let currentLevel = "B1"
 
 function updateScore(){
 
-document.querySelector("p").innerText=
-"Pontszám: "+score
+document.querySelector("p").innerText =
+"Pontszám: " + score
 
 }
 
 function showWord(level){
 
-currentIndex=0
+currentIndex = 0
 
-currentLevel=level
+currentLevel = level
 
 document.getElementById(
 "message"
-)
-
-.innerText=""
+).innerText = ""
 
 document.getElementById(
 "level"
-)
-
-.innerText=
-
-"Szint: "+level
+).innerText =
+"Szint: " + level
 
 document.getElementById(
 "remaining"
-)
-
-.innerText=
-
-"Hatralevo szavak: "+
-
+).innerText =
+"Hatralevo szavak: " +
 words[level].length
 
 document.getElementById(
 "word"
-)
-
-.innerText=
-
+).innerText =
 words[level][currentIndex].hun
-
-}
-
-updateScore()
 
 document.getElementById(
 "answer"
 ).value=""
 
-let answer=
+}
+
+function checkAnswer(){
+
+let answer =
 
 document.getElementById(
 "answer"
@@ -70,9 +56,13 @@ document.getElementById(
 .toLowerCase()
 
 if(
+
 answer===
 
-words[currentLevel][currentIndex].eng
+words[currentLevel]
+[currentIndex]
+.eng
+
 ){
 
 score++
@@ -83,7 +73,7 @@ document.getElementById(
 "message"
 )
 
-.innerText=
+.innerText =
 
 "Helyes valasz!"
 
@@ -93,21 +83,62 @@ document.getElementById(
 "remaining"
 )
 
-.innerText=
+.innerText =
 
 "Hatralevo szavak: "+
 
 (
+
 words[currentLevel]
 .length
 
 -
 
 currentIndex
+
 )
 
-let score = 0
-  
+document.getElementById(
+"answer"
+)
+
+.value=""
+
+if(
+
+currentIndex<
+
+words[currentLevel]
+.length
+
+){
+
+document.getElementById(
+"word"
+)
+
+.innerText=
+
+words[currentLevel]
+[currentIndex]
+.hun
+
+}
+
+else{
+
+document.getElementById(
+"word"
+)
+
+.innerText=
+
+"Gratulalok, vege!"
+
+}
+
+}
+
 else{
 
 document.getElementById(
@@ -121,3 +152,5 @@ document.getElementById(
 }
 
 }
+
+updateScore()
