@@ -62,7 +62,7 @@ levelName
 document.getElementById(
 "remaining"
 ).innerText =
-"Hatralevo szavak: " +
+"Hátralévő szavak: " +
 words[level].length
 
 document.getElementById(
@@ -109,7 +109,7 @@ document.getElementById(
 
 .innerText =
 
-"Helyes valasz!"
+"Helyes válasz!"
 
 currentIndex++
 
@@ -119,7 +119,7 @@ document.getElementById(
 
 .innerText =
 
-"Hatralevo szavak: "+
+"Hátralévő szavak: "+
 
 (
 
@@ -167,7 +167,7 @@ document.getElementById(
 
 .innerText=
 
-"Gratulalok, vege!"
+"Gratulálok, vége!"
 
 }
 
@@ -181,7 +181,7 @@ document.getElementById(
 
 .innerText=
 
-"Nem jo valasz"
+"Nem jó válasz"
 
 currentIndex++
 
@@ -197,7 +197,7 @@ document.getElementById(
 
 .innerText=
 
-"Hatralevo szavak: "+
+"Hátralévő szavak: "+
 
 (
 
@@ -239,7 +239,7 @@ document.getElementById(
 
 .innerText=
 
-"Vege!"
+"Vége!"
 
 let percent=
 
