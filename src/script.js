@@ -32,6 +32,16 @@ document.getElementById(
 "Szint: "+level
 
 document.getElementById(
+"remaining"
+)
+
+.innerText=
+
+"Hatralevo szavak: "+
+
+words[level].length
+
+document.getElementById(
 "word"
 )
 
@@ -76,6 +86,23 @@ document.getElementById(
 "Helyes valasz!"
 
 currentIndex++
+
+document.getElementById(
+"remaining"
+)
+
+.innerText=
+
+"Hatralevo szavak: "+
+
+(
+words[currentLevel]
+.length
+
+-
+
+currentIndex
+)
 
 if(
 currentIndex<
