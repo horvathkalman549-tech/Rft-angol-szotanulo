@@ -14,6 +14,10 @@ Funkciók:
 - kérdések megjelenítése
 - válasz ellenőrzése
 - pontszám számítása
+- hátralévő szavak számának megjelenítése
+- eredmény százalékos kiértékelése
+- új játék indítása
+- Enter billentyűvel történő válaszellenőrzés
 
 Fájlok:
 - words.js tartalmazza a szólistákat.
@@ -23,3 +27,4 @@ Fájlok:
 
 A rendszer kliensoldalon fut.
 Internetkapcsolat nélkül is használható.
+A rendszer reszponzív megjelenítést biztosít különböző képernyőméreteken.
