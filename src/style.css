@@ -9,6 +9,7 @@ background:
 linear-gradient(
 180deg,
 #eef2ff,
+#f8f9ff
 );
 
 text-align:center;
@@ -43,8 +44,6 @@ font-size:18px;
 
 margin:8px;
 
-cursor:pointer;
-
 }
 
 button:hover{
@@ -78,11 +77,5 @@ margin-top:25px;
 p{
 
 font-size:24px;
-
-}
-
-#message{
-
-font-weight:bold;
 
 }
