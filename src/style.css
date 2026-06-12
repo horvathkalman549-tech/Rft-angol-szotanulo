@@ -2,30 +2,60 @@ body{
 
 font-family:Arial;
 
+background:#f4f6fb;
+
 padding:40px;
 
 text-align:center;
 
 }
 
+h1{
+
+font-size:40px;
+
+}
+
 button{
 
-padding:10px;
+padding:12px 20px;
 
-margin:5px;
+margin:8px;
+
+border:none;
+
+border-radius:12px;
+
+cursor:pointer;
 
 }
 
 input{
 
-padding:10px;
+padding:12px;
 
-width:250px;
+width:260px;
+
+border-radius:10px;
+
+}
+
+#word{
+
+font-size:28px;
+
+font-weight:bold;
+
+margin:20px;
 
 }
 
 #message{
 
+font-size:20px;
+
 font-weight:bold;
+
+margin-top:15px;
 
 }
